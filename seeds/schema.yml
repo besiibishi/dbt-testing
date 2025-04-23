@@ -1,0 +1,16 @@
+version: 2
+
+seeds:
+  - name: my_project
+    tables:
+      - name: patients
+        description: "Seeded table containing raw patient data."
+        columns:
+          - name: id
+            description: "Unique identifier for each patient."
+          - name: name
+            description: "Full name of the patient."
+          - name: age
+            description: "Patient's age in years."
+          - name: diagnosis
+            description: "Medical diagnosis assigned to each patient."

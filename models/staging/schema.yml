@@ -1,0 +1,41 @@
+# version: 2
+
+# sources: 
+#   - name: main #this is schema name (duck db default)
+#     tables:
+
+#       - name: patients # this is the table name in DuckDB
+#           # tash qito jon teste me e siguru qe i kem columns te validum
+       
+#         tests:
+#           - not_null
+#           - unique
+#       - name: name
+#         tests:
+#           - not_null
+#       - name: diagnosis
+#         tests:
+#           - accepted_values:
+#               values: ['Diabetes', 'Hypertension']
+
+version: 2
+
+sources:
+  - name: main
+    tables:
+      - name: patients
+        description: "Raw patient data loaded from seed"
+        columns:
+          - name: id
+            description: "Primary key of patient."
+            tests:
+              - not_null
+              - unique
+          - name: name
+            tests:
+              - not_null
+          - name: diagnosis
+            tests:
+              - accepted_values:
+                  values: ['Diabetes', 'Hypertension']
+                  
