@@ -1,0 +1,8 @@
+visit_id,patient_id,doctor_name,diagnosis,visit_date
+101,1,Dr. Smith,Diabetes,2024-05-01
+102,2,Dr. Smith,Hypertension,2024-05-01
+103,3,Dr. Lee,Diabetes,2024-05-02
+104,1,Dr. Lee,Diabetes,2024-05-03
+105,4,Dr. Smith,Flu,2024-05-03
+106,5,Dr. Smith,Diabetes,2024-05-04
+107,3,Dr. Lee,Diabetes,2024-05-04
