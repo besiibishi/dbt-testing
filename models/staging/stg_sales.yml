@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: stg_sales
+    description: "Staging model for raw sales data"
+    columns:
+      - name: sale_id
+        description: "Unique ID for each sale"
+        tests:
+          - not_null
+          - unique
+
+      - name: product_id
+        description: "The ID of the product sold"
+        tests:
+          - not_null
+
+      - name: quantity
+        description: "Number of items sold in this transaction"
+        tests:
+          - not_null

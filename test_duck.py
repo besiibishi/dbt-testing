@@ -2,10 +2,10 @@
 
 # con = test_duck.connect("dev.duckdb")
 
-# print(con.execute("Select * from stg_patients").fetchdf())
+# print(con.execute("Select * from sales_summary").fetchdf())
 
 import duckdb
 
 con = duckdb.connect("dev.duckdb")
-df = con.execute("SELECT * FROM doctor_summary").fetchdf()
+df = con.execute("SELECT * FROM sales_summary").fetchdf()
 print(df)

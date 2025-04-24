@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: doctor_summary_2
+    description: "Aggregated summary of visits to the doctor"
+
+    columns:
+      - name: doctor_name
+        description: "Name of the doctor"
+
+        tests: 
+          - not_null
+      - name: unique_patients
+        description: "Number of unique_patients the doctor has seen"
+        tests: 
+          - not_null
+      
+      - name: diagnosis
+        description: "The most frequent diagnosis"
+        tests: 
+          - not_null

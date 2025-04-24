@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: main
+    tables: 
+      - name: visits_v2
+        description: "Raw patient data"
+        columns:
+          - name: visit_id
+            description: "Primary key of patient"
+            tests:
+              - not_null
+              - unique

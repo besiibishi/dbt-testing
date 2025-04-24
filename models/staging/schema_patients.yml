@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: main
+    tables: 
+      - name: patients_v2
+        description: "Raw patient data"
+
+        columns: 
+          - name: id
+            description: "Primary key of patient"
+            tests: 
+              - not_null
+              - unique    

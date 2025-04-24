@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: stg_products
+    description: "Staging model for raw products data"
+    columns:
+      - name: product_id
+        description: "Unique ID for each product"
+        tests:
+          - not_null
+          - unique
+
+      - name: product_name
+        description: "Name of the product"
+        tests:
+          - not_null
+
+      - name: price
+        description: "Price of the product"
+        tests:
+          - not_null

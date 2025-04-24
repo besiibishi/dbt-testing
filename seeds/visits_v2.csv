@@ -1,0 +1,8 @@
+visit_id,patient_id,doctor_name,diagnosis,visit_date
+201,101,Dr. Nora,Flu,2024-05-10
+202,102,Dr. Nora,Covid,2024-05-11
+203,103,Dr. Arben,Covid,2024-05-12
+204,101,Dr. Arben,Covid,2024-05-13
+205,104,Dr. Nora,Flu,2024-05-14
+206,105,Dr. Nora,Covid,2024-05-15
+207,103,Dr. Arben,Flu,2024-05-16
