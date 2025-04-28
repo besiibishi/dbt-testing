@@ -7,5 +7,5 @@
 import duckdb
 
 con = duckdb.connect("dev.duckdb")
-df = con.execute("SELECT * FROM sales_summary").fetchdf()
+df = con.execute("SELECT * FROM product_sales_summary2").fetchdf()
 print(df)

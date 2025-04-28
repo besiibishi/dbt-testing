@@ -1,0 +1,25 @@
+version: 2
+
+models:
+  - name: customer_order_summary
+    description: "Summary of total orders and spending per customer"
+    columns:
+      - name: customer_id
+        description: "Unique ID of the customer"
+        tests:
+          - not_null
+          - unique
+
+      - name: customer_name
+        description: "Name of the customer"
+      
+      - name: region
+        description: "Region of the customer"
+
+      - name: total_orders
+        description: "Total orders of customers"
+
+      - name: total_spent
+        description: "Total spend per customer"
+
+        

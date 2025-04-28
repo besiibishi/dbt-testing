@@ -1,0 +1,29 @@
+version: 2
+
+models:
+  - name: watch_summary
+    description: "Summary of total watch_summary"
+    
+    columns:
+      - name: user_name
+        description: "Name of the user"
+
+        tests: 
+          - not_null
+
+      - name: country
+        description: "Country of the user"
+
+        tests:
+          - not_null
+
+      - name: total_watch_time
+        description: "Total watch time"
+
+      - name: number_of_shows_watched
+        description: "Number of watched shows"
+
+      - name: average_time_per_watch
+        description: "Average time per watch"
+
+        

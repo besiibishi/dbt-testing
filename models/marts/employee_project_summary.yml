@@ -1,0 +1,32 @@
+# -- Build a model called employee_project_summary that shows:
+# -- Employee name
+# -- Department
+# -- Total hours worked
+# -- Count of projects
+# -- Percentage of hours on Client projects
+
+
+version: 2
+
+models:
+  - name: employee_project_summary
+    description: "Summary of the employees and the projects"
+    columns:
+      - name: employee_name
+        description: "Emri i punetorit"
+        tests: 
+          - not_null
+          
+      - name: department
+        description: "Departamenti qe punon"
+        tests:
+          - not_null
+
+      - name: total_hours_worked
+        description: "Oret e punes"
+    
+      - name: count_projects
+        description: "Projektet qe punuara"
+
+      - name: percentage_of_hours
+        description: "perqindjet e shpenzuara ne projekt"

@@ -1,0 +1,7 @@
+project_id,employee_id,hours_logged,project_type
+101,1,20,Internal
+102,2,35,Client
+103,1,25,Client
+104,3,40,Client
+105,4,10,Internal
+106,2,45,Internal
