@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: raw_data
+    schema: main
+    description: "Seeded raw data from CSV files"
+    tables:
+      - name: customers2
+        description: "Customer information"
+
+      - name: payments2
+        description: "Payments made by customers"
+

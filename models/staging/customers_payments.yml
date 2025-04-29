@@ -1,0 +1,25 @@
+version: 2
+
+models:
+  - name: stg_customers2
+    description: "Cleaned customers data"
+    columns:
+      - name: customer_id 
+        tests:
+          - not_null
+          - unique
+
+  - name: stg_payments2
+    description: "Cleaned payments data"
+    columns:
+      - name: payment_id
+        tests:
+          - not_null
+          - unique
+
+      - name: customer_id
+        tests:
+          - not_null
+          - relationships: 
+              to: ref('stg_customers2')
+              field: customer_id
