@@ -1,0 +1,19 @@
+source: 2
+
+models:
+  - name: stg_customers2
+    description: "Cleaned customers data for analysis"
+    columns:
+      - name: customer_id
+        description: "Customer id"
+        tests:
+          - unique
+          - not_null
+
+      - name: city
+        description: "City where customer lives"
+        tests:
+          - not_null
+          - accepted_values:
+              values: ["New York", "Chicago", "Boston", "Los Angeles"]
+    

@@ -1,0 +1,26 @@
+version: 2
+
+models:
+   - name: stg_payments2
+     description: "Cleaned payments data for customer transactions."
+     columns:
+      - name: payment_id
+        description: "Unique ID for each payment"
+        tests:
+          - not_null
+          - unique
+
+      - name: customer_id
+        description: "ID of the customer who made the payment"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_customers2')
+              field: customer_id
+
+      - name: amount
+        description: "Payment amount in dollars"
+        tests:
+          - not_null
+        
+      
