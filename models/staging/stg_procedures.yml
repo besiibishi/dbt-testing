@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: stg_procedures
+    description: "Staging model for procedures data"
+    columns: 
+      - name: procedure_id
+        tests: [not_null, unique]
+      - name: patient_id
+        tests: [not_null]
+      - name: procedure_code
+        description: "Procedure code"
+

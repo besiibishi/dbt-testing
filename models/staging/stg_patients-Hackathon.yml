@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: stg_patients-Hackathon
+    description: "Staging model for Synthea patients dataset for Hackathon."
+    columns:
+      - name: id
+        description: "Unique patient identifier."
+        tests:
+          - not_null
+          - unique
+
+      - name: gender
+        description: "Gender of the patient."
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['M', 'F']
+
+      - name: birthdate
+        description: "Birthdate of the patient."
+        tests:
+          - not_null
+
+      - name: deathdate
+        description: "Deathdate of the patient if deceased. Null otherwise."
