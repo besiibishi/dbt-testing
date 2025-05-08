@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: mart_product_reviews
+    columns:
+      - name: product_id
+        description: "product ID"
+        tests:
+          - unique
+          - not_null
